@@ -9,7 +9,7 @@ procedure Main is
    --  Numero_Al_Azar : Floar;
    Numero_Al_Azar : Integer;
    Es_Correcto : Boolean := True;
-   N : Integer := 5;
+   Numero_Oportunidades : constant Integer := 5;
    Numero : Integer;
 
 begin
@@ -18,10 +18,11 @@ begin
    --  Si responder mal te dice que es mayor o menor
    --  Tienes 5 itnentos
    --  Si el usuario adivina dentro de las N oportunidades pierde
-      Reset(G);
+   Reset(G);
+   Numero_Al_Azar := Integer((Random(G) * 100.0) + 1.0);
 
-      for i in 1..N loop
-         Numero_Al_Azar := Integer((Random(G) * 100.0) + 1.0);
+      for i in 1..Numero_Oportunidades loop
+
          -- Put(Numero_Al_Azar, Exp => 0);
          Put_Line(Numero_Al_Azar'Image);
 
@@ -37,7 +38,12 @@ begin
 
       end if;
 
+      if Numero < Numero_Al_Azar then
+         Put_Line("El numero que quieres adivinar es mayor");
 
+      else
+         Put_Line("El numero que quieres adivinar es menor");
+      end if;
 
    end loop;
 
@@ -47,3 +53,4 @@ end if;
 
    null;
 end Main;
+
