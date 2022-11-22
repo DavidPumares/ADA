@@ -1,8 +1,8 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-C:\Users\dpumares\Desktop\ADA pryects\default.gpr
-20221110084928 248f2705138bac858ed729dfb3a6af0c
+C:\Users\dpumares\Desktop\ADA pryects\proyecto_2.gpr
+20221114071354 d8253fa2cf26b16d5d104f63fa249d4b
 [BOUND OBJECT FILES]
 C:\Users\dpumares\Desktop\ADA pryects\obj\main.o
 [GENERATED SOURCE FILES]
@@ -14,6 +14,5 @@ b__main.ali
 -LC:\Users\dpumares\Desktop\ADA pryects\obj\
 -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
 -static
--static-libgcc
 C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
 -Wl,--stack=0x2000000
